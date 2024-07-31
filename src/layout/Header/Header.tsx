@@ -1,10 +1,12 @@
+import { Input } from "antd"
 import Profile from "../../components/common/Profile/Profile"
 import NavList from "../../components/NavList/NavList"
 import { mockProfile } from "./Header.static"
+import { SearchOutlined } from "@ant-design/icons"
 
 const HeaderLayout = () => {
     return (
-        <div className="w-full h-full flex items-center gap-2">
+        <div className="w-full h-full flex items-center justify-evenly gap-2">
             <a href="/" className="logo max-w-[100px] h-full">
                 <img
                     className="w-full h-full object-cover"
@@ -12,10 +14,8 @@ const HeaderLayout = () => {
                     alt="logo"
                 />
             </a>
-            <div className="searchBar border">
-                <label className="input input-bordered flex items-center gap-2">
-                    <input type="text" className="grow" placeholder="Search" />
-                </label>
+            <div className="searchBar min-w-[300px]">
+                <Input placeholder="Search" suffix={<SearchOutlined className="text-inherit search" />} />
             </div>
             <div className="navbar mx-3"><NavList /></div>
             <div className="profile h-full py-2 font-semibold cursor-pointer"><Profile profile={mockProfile}/></div>
