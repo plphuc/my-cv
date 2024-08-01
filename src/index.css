@@ -1,5 +1,15 @@
 @import "tailwindcss/base";
-
 @import "tailwindcss/components";
-
 @import "tailwindcss/utilities";
+
+:root {
+  --primary-background: #06141d,
+  --card-background: #1a2730,
+}
+
+* {
+}
+
+p {
+  color: white
+}

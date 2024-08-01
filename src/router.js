@@ -13,15 +13,15 @@ const router = createBrowserRouter([
           },
           {
             path: 'design-cv',
-            element: <HomePage />
+            element: <p>design your cv</p>
           },
           {
             path: 'my-networks',
-            element: <HomePage />
+            element: <p>my network</p>
           },
           {
             path: 'jobs',
-            element: <HomePage />
+            element: <p>jobs list</p>
           },
           {
             path: 'my-profile',

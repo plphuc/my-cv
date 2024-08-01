@@ -1,28 +1,26 @@
 import { Layout, Menu } from 'antd'
 import { Outlet } from 'react-router-dom'
 import HeaderLayout from '../Header/Header'
+import SiderLayout from '../Sider/Sider'
 
 const { Header, Content, Sider } = Layout
 
 function MainLayout() {
     return (
-        <Layout className="w-full h-full">
-            <Header className="bg-white border-b-2 pb-1">
+        <Layout className="xl:px-52 bg-primaryBackground h-full">
+            <Header className="bg-primaryBackground pb-1 px-0">
                 <HeaderLayout />
             </Header>
-            <Layout>
+            <Layout className='pt-10 bg-primaryBackground'>
                 <Sider
                     style={{
-                        background: 'white',
+                        background: 'var(--primary-background)',
                     }}
                 >
-                    <Menu />
+                    <SiderLayout />
                 </Sider>
-                <Layout>
+                <Layout className='bg-primaryBackground'>
                     <Content
-                        style={{
-                            background: 'white',
-                        }}
                     >
                         Content
                         <Outlet />

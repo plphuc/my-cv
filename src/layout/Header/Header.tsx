@@ -6,7 +6,7 @@ import { SearchOutlined } from "@ant-design/icons"
 
 const HeaderLayout = () => {
     return (
-        <div className="w-full h-full flex items-center justify-evenly gap-2">
+        <div className="w-full h-full flex items-center justify-between gap-2">
             <a href="/" className="logo max-w-[100px] h-full">
                 <img
                     className="w-full h-full object-cover"
@@ -14,8 +14,8 @@ const HeaderLayout = () => {
                     alt="logo"
                 />
             </a>
-            <div className="searchBar min-w-[300px]">
-                <Input placeholder="Search" suffix={<SearchOutlined className="text-inherit search" />} />
+            <div className="searchBar min-w-[400px]">
+                <Input className="rounded-full" placeholder="Search" suffix={<SearchOutlined className="text-inherit search" />} />
             </div>
             <div className="navbar mx-3"><NavList /></div>
             <div className="profile h-full py-2 font-semibold cursor-pointer"><Profile profile={mockProfile}/></div>

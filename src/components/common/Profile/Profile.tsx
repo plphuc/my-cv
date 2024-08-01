@@ -14,9 +14,9 @@ const Profile = ({ profile }: IProfileProps) => {
             <Avatar
                 src={profile.userImg}
                 icon={profile.userImg && <UserOutlined />}
-                className=''
+                className='user avatar'
             />
-            <p className='leading-3 text-gray-600'>{profile.username}</p>
+            <p className='leading-3'>{profile.username}</p>
         </div>
     )
 }

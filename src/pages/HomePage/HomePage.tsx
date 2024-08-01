@@ -1,7 +1,9 @@
 import { ReactElement } from 'react'
 
 const HomePage = (): ReactElement => {
-    return <div>{window.location.href}</div>
+    return <div className=''>
+        
+    </div>
 }
 
 export default HomePage
